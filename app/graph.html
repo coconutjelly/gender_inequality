@@ -12,6 +12,8 @@
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/app/bootstrap-table/src/bootstrap-table.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
@@ -34,48 +36,55 @@
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="index.html">Home</a></li>
           <li class="active"><a href="report.html">Report</a></li>
-          <li class="active"><a href="graph.html">Graph</a></li>
+          <li class="active"><a href="graph.html">Data</a></li>
           <li class="active"><a href="about.html">About</a></li>
           <li class="active"><a href="contact.html">Contact</a></li>
         </ul>
+
         <h7 class="text-muted">Human Development Report 2014</h7>
         <h3 class="text-muted">Gender Inequality</h3>
-        <h7 class="text-muted">Graph</h7>
+        <h7 class="text-muted">Data</h7>
       </div>
 
-      <div class="jumbotron">
+      <!--div class="jumbotron">
 
-        <!--
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-      -->
-      put slideshow here
-      </div>
+       </div-->
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <!--
-          <h4><a href="https://html5boilerplate.com/">HTML5 Boilerplate</a></h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-
-
-          <h4><a href="http://getbootstrap.com/">Bootstrap</a></h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4><a href="http://modernizr.com/">Modernizr</a></h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-        -->
-
+        <div>
+          <p>Below shows a table for 10 countries with the highest Human Development Index Rank. The following information is presented in the table</p>
+          <ul>
+            <li>Human Development Index Rank (HDI)</li>
+            <li>Country Name</li>
+            <li>Gender Inequality(GI) Index Value</li>
+            <li>Gender Inequality(GI) Index Rank</li>
+            <li>Population with at least some Secondary Education(ages 25+) divided into male and female</li>
+          </ul>
         </div>
-      </div>
+
+        <div style="margin-top:50px">
+        
+          <table data-toggle="table" data-search-align="left" data-url="data.json" data-sort-name="rank" data-sort-order="asc" data-cache="false">
+            <caption>Table showing the 10 countries ranked highest in terms of their HDI</caption>
+            <thead>
+              <tr>
+                <th data-field="rank" data-sortable="true">HDI Rank</th>
+                <th data-field="name" data-sortable="true">Country Name</th>
+                <th data-field="giv" data-sortable="true">GI Index Value,2013</th>
+                <th data-field="gir" data-sortable="true">GI Index Rank,2013</th>
+                <th data-field="fe" data-sortable="true">Secondary Education, 25+, Female(2005-2012)</th>
+                <th data-field="me" data-sortable="true">Secondary Education, 25+, Male(2005-2012)</th>
+
+              </tr>
+            </thead>
+          </table>
+        
+        </div>
+    
+
 
       <div class="footer">
-      <!--
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      -->
-      put footer here
+      <p>Bootstrap Table plugin</p>
+      <p>http://wenzhixin.net.cn/p/bootstrap-table/docs/index.html</p>
       </div>
     </div>
 
@@ -101,11 +110,14 @@
     <script src="/bower_components/bootstrap/js/scrollspy.js"></script>
     <script src="/bower_components/bootstrap/js/collapse.js"></script>
     <script src="/bower_components/bootstrap/js/tab.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
     <!-- endbuild -->
 
 
     <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
+    <script src="/bootstrap-table/src/bootstrap-table.js"></script>
+    <script src="/scripts/main.js"></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
