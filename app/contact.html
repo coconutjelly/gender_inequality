@@ -43,41 +43,91 @@
         <h7 class="text-muted">Contact</h7>
       </div>
 
-      <div class="jumbotron">
+      
 
-        <!--
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-      -->
-      put slideshow here
-      </div>
+       <form class="form-horizontal">
+  <fieldset>
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <!--
-          <h4><a href="https://html5boilerplate.com/">HTML5 Boilerplate</a></h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+  <!-- Form Name -->
+  <legend>We'll contact you!</legend>
 
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="firstname">First Name</label>
+    <div class="col-md-4">
+    <input id="firstname" name="First Name" type="text" placeholder="First Name" class="form-control input-md" required="">
 
-
-          <h4><a href="http://getbootstrap.com/">Bootstrap</a></h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4><a href="http://modernizr.com/">Modernizr</a></h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-        -->
-
-        </div>
-      </div>
-
-      <div class="footer">
-      <!--
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      -->
-      put footer here
-      </div>
     </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="lastname"> Last Name</label>
+    <div class="col-md-4">
+    <input id="lastname" name="Last Name" type="text" placeholder="Last Name" class="form-control input-md" required="">
+
+    </div>
+  </div>
+
+  <!-- Multiple Radios -->
+  <div class="form-group">
+    <label class="col-md-4 control-label">Gender</label>
+    <div class="col-md-4">
+    <div class="radio">
+      <label for="genradios-0">
+        <input type="radio" name="radios" id="genradios-0" value="1" checked="checked">
+        Male
+      </label>
+  	</div>
+    <div class="radio">
+      <label for="genradios-1">
+        <input type="radio" name="radios" id="genradios-1" value="2">
+        Female
+      </label>
+  	</div>
+    </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="eaddress">E-mail</label>
+    <div class="col-md-8">
+    <input id="eaddress" name="E-mail Address" type="text" placeholder="E-mail" class="form-control input-md" required="">
+
+    </div>
+  </div>
+
+  <!-- Textarea -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="Comments">Comments</label>
+    <div class="col-md-4">
+      <textarea class="form-control" id="Comments" name="Comments">Leave us a comment!</textarea>
+    </div>
+  </div>
+
+  <!-- Button -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="Submit"></label>
+    <div class="col-md-4">
+      <button id="Submit" name="Submit" class="btn btn-success">Submit</button>
+    </div>
+  </div>
+
+  </fieldset>
+  </form>
+
+  <article class=".dl-horizontal">
+      <h1>Contact Us!</h1>
+      <p>E-mail: genin@my.sta.uwi.edu</p>
+      <p>Phone: + 868 420 6969</p>
+      <p>Address:<br> Faculty of Social Sciences,<br>
+        UWI, St. Augustine,<br>
+        Trinidad & Tobago<br>
+        West Indies.
+      </p>
+  </article>
+  </div>
+
 
 
     <!-- build:js(.) scripts/vendor.js -->
