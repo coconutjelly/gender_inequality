@@ -1,0 +1,82 @@
+[
+	{
+		"rank": 1,
+		"name": "Norway",
+		"giv": 0.068,
+		"gir": 9,
+		"fe": 97.4,
+		"me": 96.7
+		},
+	{
+		"rank": 2,
+		"name": "Australia",
+		"giv": 0.113,
+		"gir": 19,
+		"fe": 94.3,
+		"me":94.6
+		},
+	{
+		"rank": 3,
+		"name": "Switzerland",
+		"giv": 0.030,
+		"gir": 2,
+		"fe": 95.0,
+		"me": 96.6
+		},
+	{
+		"rank": 4,
+		"name": "Netherlands",
+		"giv": 0.057,
+		"gir": 7,
+		"fe": 87.7,
+		"me": 90.5
+		},
+	{
+		"rank": 5,
+		"name": "United States",
+		"giv": 0.262,
+		"gir": 47,
+		"fe": 95.1,
+		"me": 94.8
+		},
+	{
+		"rank": 6,
+		"name": "Germany",
+		"giv": 0.046,
+		"gir": 3,
+		"fe": 96.3,
+		"me": 97.0
+		},
+	{
+		"rank": 7,
+		"name": "New Zealand",
+		"giv": 0.185,
+		"gir": 34,
+		"fe": 95.0,
+		"me": 95.3
+		},
+	{
+		"rank": 8,
+		"name": "Canada",
+		"giv": 0.136,
+		"gir": 23,
+		"fe": 100.0,
+		"me": 100.0
+		},
+	{
+		"rank": 9,
+		"name": "Singapore",
+		"giv": 0.090,
+		"gir": 15,
+		"fe": 74.1,
+		"me": 81.0
+		},
+	{
+		"rank": 10,
+		"name": "Denmark",
+		"giv": 0.056,
+		"gir": 5,
+		"fe": 95.5,
+		"me": 96.6
+		}
+]
