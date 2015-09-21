@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="favicon.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -22,6 +22,117 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
+    <style>
+      body{
+       /* background-color:#ABBCDC;*/
+      }
+
+      @mixin fade-transition($element) {
+      -webkit-transition: $element 0.15s ease-in-out;
+      -moz-transition: $element 0.15s ease-in-out;
+      -ms-transition: $element 0.15s ease-in-out;
+      -o-transition: $element 0.15s ease-in-out;
+      transition: $element 0.15s ease-in-out;
+    }
+    .jumbotron {
+      position: relative;
+      text-align: center;
+     /* background-color:#8996B0;*/
+      @include fade-transition(background);
+    }
+
+
+    i {
+    /*   positioning */
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 0;
+
+    /*   gradient   */
+        background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.03) 1%, rgba(255,255,255,0.6) 30%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0.85) 70%, rgba(255,255,255,0.85) 71%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(1%,rgba(255,255,255,0.03)), color-stop(30%,rgba(255,255,255,0.85)), color-stop(50%,rgba(255,255,255,0.85)), color-stop(70%,rgba(255,255,255,0.85)), color-stop(71%,rgba(255,255,255,0.85)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* IE10+ */
+        background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
+    /*  forming the shine element*/
+        width: 15%;
+        height:100%;
+         transform: skew(-10deg,0deg);
+        -webkit-transform: skew(-10deg,0deg);
+         -moz-transform: skew(-10deg,0deg);
+         -ms-transform: skew(-10deg,0deg);
+         -o-transform: skew(-10deg,0deg);
+
+    /*  animating it  */
+        animation: move 2s;
+        animation-iteration-count: 1;
+        animation-delay: 10s;
+
+        -webkit-animation: move 2s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-delay: 1s;
+
+        -moz-transform: skew(-10deg,0deg);
+        -moz-animation: move 2s;
+        -moz-animation-iteration-count: 1;
+        -moz-animation-delay: 1s;
+
+        -ms-transform: skew(-10deg,0deg);
+        -ms-animation: move 2s;
+        -ms-animation-iteration-count: 1;
+        -ms-animation-delay: 1s;
+
+        -o-transform: skew(-10deg,0deg);
+        -o-animation: move 2s;
+        -o-animation-iteration-count: 1;
+        -o-animation-delay: 1s;
+      }
+
+    /*  */
+    @keyframes move {
+      0%  { left: 0; opacity: 0; }
+      5% {opacity: 0.0}
+      48% {opacity: 0.2}
+      80% {opacity: 0.0}
+      100% { left: 80%}
+    }
+
+    @-webkit-keyframes move {
+      0%  { left: 0; opacity: 0; }
+      5% {opacity: 0.0}
+      48% {opacity: 0.2}
+      80% {opacity: 0.0}
+      100% { left: 80%}
+    }
+
+    @-moz-keyframes move {
+      0%  { left: 0; opacity: 0; }
+      5% {opacity: 0.0}
+      48% {opacity: 0.2}
+      80% {opacity: 0.0}
+      100% { left: 80%}
+    }
+
+    @-ms-keyframes move {
+      0%  { left: 0; opacity: 0; }
+      5% {opacity: 0.0}
+      48% {opacity: 0.2}
+      80% {opacity: 0.0}
+      100% { left: 80%}
+    }
+
+    @-o-keyframes move {
+      0%  { left: 0; opacity: 0; }
+      5% {opacity: 0.0}
+      48% {opacity: 0.2}
+      80% {opacity: 0.0}
+      100% { left: 80%}
+    }
+    </style>
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -32,50 +143,45 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li class="active"><a href="report.html">Report</a></li>
-          <li class="active"><a href="graph.html">Graph</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="report.html">Report</a></li>
+          <li><a href="graph.html">Graph</a></li>
           <li class="active"><a href="about.html">About</a></li>
-          <li class="active"><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
+       <!--<a href="index.html"><img src="logo.png" class="img-rounded" alt="UNDC Logo" style="position:absolute;"></a>-->
         <h7 class="text-muted">Human Development Report 2014</h7>
         <h3 class="text-muted">Gender Inequality</h3>
-        <h7 class="text-muted">About</h7>
       </div>
 
-      <div class="jumbotron">
+       <div class="jumbotron">
+        <h1>About Us</h1>
+        <p>Women experience many kinds of disadvantage and discrimination in health, education and employment. To highlight these disparities, this Report presents Human Development Index (HDI) values separately for women and men for 148 countries.</p>
+        <i></i>
 
-        <!--
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-      -->
-      put slideshow here
       </div>
 
       <div class="row marketing">
         <div class="col-lg-6">
-          <!--
-          <h4><a href="https://html5boilerplate.com/">HTML5 Boilerplate</a></h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+          <p>Human development - or the human development approach - is about expanding the richness of human life, rather than simply the richness of the
+economy in which human beings live. It is an approach that is focused on people and their opportunities and choices.</p>
 
-
-
-          <h4><a href="http://getbootstrap.com/">Bootstrap</a></h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4><a href="http://modernizr.com/">Modernizr</a></h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-        -->
-
+          <ul>
+            <li>
+              <p>People: Human development focuses on improving the lives people lead rather than assuming that economic growth will lead,  automatically, to greater wellbeing for all. Income growth is seen as a means to development, rather than an end in itself.</p>
+            </li>
+            <li>
+              <p>Opportunities: is about giving people more freedom to live lives they value. In effect this means developing people's abilities and giving them a chance to use them. For example, educating a girl would build her skills, but it is of little use if she is denied access  to jobs, or does not have the right skills for the local labour market. Three foundations for human development are to live a long, healthy and creative life, to be knowledgeable, and to have access to resources needed for a decent standard of living.</p>
+            </li>
+            <li>
+              <p>Choice: HDI is fundamentally, about more choice. It is about providing people with opportunities, not insisting that they make use of them. No one can guarantee human happiness, and the choices people make are their own concern. The process of development - human development - should  at least create an environment for people, individually and collectively, to develop to their full potential and to have a reasonable chance of leading productive and creative lives that they value.</p>
+            </li>
+          </ul>
         </div>
       </div>
 
       <div class="footer">
-      <!--
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      -->
-      put footer here
+        <address style="text-align:center; font-size:80%">Faculty of Social Sciences,<br>UWI, St. Augustine,<br>Trinidad & Tobago,<br>West Indies.<br>Phone: + 868 420-6969<br> Email:undp@gov.tt</address>
       </div>
     </div>
 
